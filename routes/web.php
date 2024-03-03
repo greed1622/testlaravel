@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Counter;
+use App\Livewire\CreatePost;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +24,10 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+Route::get('/counter', Counter::class);
+Route::get('create-post', CreatePost::class);
+
+
+
 
 require __DIR__.'/auth.php';

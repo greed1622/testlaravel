@@ -35,7 +35,7 @@ new #[Layout('layouts.guest')] class extends Component
 
         $this->redirect(RouteServiceProvider::HOME, navigate: true);
     }
-}; ?>
+}; ?>   
 
 <div>
     <form wire:submit="register">
